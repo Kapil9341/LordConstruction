@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <title>LordConstruction</title>
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+
+    <!-- Favicons -->
+    <link href="{% static 'img/favicon.png' %}" rel="icon"/>
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon"/>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+            href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}"
+            rel="stylesheet"
+    />
+    <link
+            href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}"
+            rel="stylesheet"
+    />
+    <link
+            href="{% static 'vendor/fontawesome-free/css/all.min.css' %}"
+            rel="stylesheet"
+    />
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet"/>
+    <link
+            href="{% static 'vendor/glightbox/css/glightbox.min.css' %}"
+            rel="stylesheet"
+    />
+    <link
+            href="{% static 'vendor/swiper/swiper-bundle.min.css' %}"
+            rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet"/>
+
+    <!-- =======================================================
+* Template Name: LordConstruction
+* Template URL: https://bootstrapmade.com/LordConstruction-bootstrap-construction-website-template/
+* Updated: Mar 17 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+======================================================== -->
+</head>
+
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center">
+    <div
+            class="container-fluid container-xl d-flex align-items-center justify-content-between"
+    >
+        <a href="/" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="{% static 'img/logo.png' %}" alt=""> -->
+            <h1>LordConstruction<span>.</span></h1>
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- .navbar -->
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="hero">
+    <div class="info d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 data-aos="fade-down">
+                        Welcome to <span>LordConstruction</span>
+                    </h2>
+                    <p data-aos="fade-up">
+                        Welcome to LordConstruction, where innovation meets craftsmanship. With 20 years of experience
+                        in the construction industry, we specialize in turning your visions into reality. Whether you're
+                        envisioning a stunning residential home, a functional commercial space, or a sustainable
+                        infrastructure project, we have the expertise and dedication to bring it to life.
+                    </p>
+                    <a
+                            data-aos="fade-up"
+                            data-aos-delay="200"
+                            href="#get-started"
+                            class="btn-get-started"
+                    >Get Started</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div
+            id="hero-carousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
+    >
+        <div
+                class="carousel-item active"
+                style="
+                        background-image: url({% static 'img/hero-carousel/hero-carousel-1.jpg' %});
+                    "
+        ></div>
+        <div
+                class="carousel-item"
+                style="
+                        background-image: url({% static 'img/hero-carousel/hero-carousel-2.jpg' %});
+                    "
+        ></div>
+        <div
+                class="carousel-item"
+                style="
+                        background-image: url({% static 'img/hero-carousel/hero-carousel-3.jpg' %});
+                    "
+        ></div>
+        <div
+                class="carousel-item"
+                style="
+                        background-image: url({% static 'img/hero-carousel/hero-carousel-4.jpg' %});
+                    "
+        ></div>
+        <div
+                class="carousel-item"
+                style="
+                        background-image: url({% static 'img/hero-carousel/hero-carousel-5.jpg' %});
+                    "
+        ></div>
+
+        <a
+                class="carousel-control-prev"
+                href="#hero-carousel"
+                role="button"
+                data-bs-slide="prev"
+        >
+                    <span
+                            class="carousel-control-prev-icon bi bi-chevron-left"
+                            aria-hidden="true"
+                    ></span>
+        </a>
+
+        <a
+                class="carousel-control-next"
+                href="#hero-carousel"
+                role="button"
+                data-bs-slide="next"
+        >
+                    <span
+                            class="carousel-control-next-icon bi bi-chevron-right"
+                            aria-hidden="true"
+                    ></span>
+        </a>
+    </div>
+</section>
+<!-- End Hero Section -->
+
+<main id="main">
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="get-started section-bg">
+        <div class="container">
+            <div class="row justify-content-between gy-4">
+                <div
+                        class="col-lg-6 d-flex align-items-center"
+                        data-aos="fade-up"
+                >
+                    <div class="content">
+                        <h3>
+                            GET IN TOUCH
+                        </h3>
+                        <p>
+                            Please fill the contact form we will call you soon or you can contact on
+                            through below details .
+
+                        </p>
+                        <p>
+                            <!--                                <i class="bi bi-envelope"></i>-->
+                        <h5>Email Us</h5>
+                        <p>contact@lordconstruction.com</p>
+                        </p>
+                        <p>
+                        <h5>Address</h5>
+                        2nd Floor,113 Manbhawan Nagar <br/>
+                        Near PNB, service Road, <br/>
+                        Bengali Square Indore <br/>
+                        452016, INDIA<br/><br/>
+                        </p>
+
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-5" data-aos="fade">
+                    <form
+                            action="{% url 'get_in_touch' %}"
+                            method="post"
+                            class="php-email-form"
+                    >
+                        {% csrf_token %}
+                        <!--                                <h3>Get In Touch</h3>-->
+                        <!--                                <p>-->
+                        <!--                                    Please fill the contact form we will call you soon or you can contact on through below details .-->
+                        <!--                                </p>-->
+                        <div class="row gy-3">
+                            <div class="col-md-12">
+                                <input
+                                        type="text"
+                                        name="name"
+                                        class="form-control"
+                                        placeholder="Name"
+                                        required
+                                />
+                            </div>
+
+                            <div class="col-md-12">
+                                <input
+                                        type="email"
+                                        class="form-control"
+                                        name="email"
+                                        placeholder="Email"
+                                        required
+                                />
+                            </div>
+
+                            <div class="col-md-12">
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        name="phone"
+                                        placeholder="Phone"
+                                        required
+                                />
+                            </div>
+
+                            <div class="col-md-12">
+                                        <textarea
+                                                class="form-control"
+                                                name="message"
+                                                rows="6"
+                                                placeholder="Message"
+                                                required
+                                        ></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">
+                                    Your Message request has been sent
+                                    successfully. Thank you!
+                                </div>
+
+                                <button type="submit">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- End Quote Form -->
+            </div>
+        </div>
+    </section>
+    <!-- End Get Started Section -->
+
+    <!-- ======= Constructions Section ======= -->
+    <section id="constructions" class="constructions">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Constructions</h2>
+                <p>
+                    LC provides end-to-end construction solutions for all
+                    types of Commercial & Institutional buildings.
+                    The company’s real estate expertise spans Residential,
+                    Commercial and Institutional, covering the complete range of services.
+                </p>
+            </div>
+
+            <div class="row gy-4">
+                <div
+                        class="col-lg-6"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                >
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div
+                                        class="card-bg"
+                                        style="
+                                                background-image: url({% static 'img/constructions-1.jpg' %});
+                                            "
+                                ></div>
+                            </div>
+                            <div
+                                    class="col-xl-7 d-flex align-items-center"
+                            >
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Water Supply & Sanitation.
+                                    </h4>
+                                    <p>
+                                        Water is the most precious resource on earth.
+                                        LC has over time developed a reputation as
+                                        India’s most experienced and trusted execution
+                                        agency for water solutions, having built
+                                        India’s largest water treatment plant and aqueduct.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card Item -->
+
+                <div
+                        class="col-lg-6"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                >
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div
+                                        class="card-bg"
+                                        style="
+                                                background-image: url({% static 'img/constructions-2.jpg' %});
+                                            "
+                                ></div>
+                            </div>
+                            <div
+                                    class="col-xl-7 d-flex align-items-center"
+                            >
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Irrigation
+                                    </h4>
+                                    <p>
+                                        LC has played a key role in implementing
+                                        large and complex irrigation projects that
+                                        have transformed the landscape in many parts
+                                        of India. These include dams, barrages,
+                                        and networks of major / minor canals and lift irrigation projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card Item -->
+
+                <div
+                        class="col-lg-6"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                >
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div
+                                        class="card-bg"
+                                        style="
+                                                background-image: url({% static 'img/constructions-3.jpg' %});
+                                            "
+                                ></div>
+                            </div>
+                            <div
+                                    class="col-xl-7 d-flex align-items-center"
+                            >
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Commercial & Institutional
+                                    </h4>
+                                    <p>
+                                        LC provides end-to-end construction solutions for
+                                        all types of Commercial & Institutional buildings.
+                                        The company’s real estate expertise spans Residential,
+                                        Commercial and Institutional, covering the complete range
+                                        of services including core and shell, electrical, HVAC,
+                                        and finishing works. We specialise in holistic campus
+                                        development that involves construction of multiple
+                                        buildings along with support infrastructure,
+                                        as well as in the development and construction of Green Buildings.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card Item -->
+
+                <div
+                        class="col-lg-6"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                >
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div
+                                        class="card-bg"
+                                        style="
+                                                background-image: url({% static 'img/constructions-4.jpg' %});
+                                            "
+                                ></div>
+                            </div>
+                            <div
+                                    class="col-xl-7 d-flex align-items-center"
+                            >
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Smart Cities & Townships
+                                    </h4>
+                                    <p>
+                                        The fast-paced growth of today calls for smart living,
+                                        and smart living needs smart cities.
+                                        LC took its first steps towards building a smart city.
+                                        AAWASH is a unique urban development project
+                                        spread over 100 acres of land, just 200 kms from Indore.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card Item -->
+            </div>
+        </div>
+    </section>
+    <!-- End Constructions Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Services</h2>
+                <p>
+                    Building Excellence: Our Comprehensive Construction Services Tailored to Your Needs
+                </p>
+            </div>
+
+            <div class="row gy-4">
+                <div
+                        class="col-lg-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                >
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="fa-solid fa-mountain-city"></i>
+                        </div>
+                        <h3>Residential Construction</h3>
+                        <p>
+                            New home construction,
+                            Custom home building,
+                            Single-family home construction,
+                            Multi-family housing construction (apartments, condos),
+                            Home additions and extensions,
+                            Modular home construction.
+                        </p>
+                        <a
+                                href="/service_details"
+                                class="readmore stretched-link"
+                        >Learn more <i class="bi bi-arrow-right"></i
+                        ></a>
+                    </div>
+                </div>
+                <!-- End Service Item -->
+
+                <div
+                        class="col-lg-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                >
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i
+                                    class="fa-solid fa-arrow-up-from-ground-water"
+                            ></i>
+                        </div>
+                        <h3>Commercial Construction</h3>
+                        <p>
+                            Office building construction,
+                            Retail store construction,
+                            Restaurant and hospitality construction,
+                            Warehouse and industrial construction,
+                            Healthcare facility construction (hospitals, clinics),
+                            Educational facility construction (schools, universities),
+                            Recreational facility construction (gyms, sports complexes).
+                        </p>
+                        <a
+                                href="/service_details"
+                                class="readmore stretched-link"
+                        >Learn more <i class="bi bi-arrow-right"></i
+                        ></a>
+                    </div>
+                </div>
+                <!-- End Service Item -->
+
+                <div
+                        class="col-lg-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                >
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <h3>Renovation and Remodeling</h3>
+                        <p>
+                            Home renovation,
+                            Kitchen remodeling,
+                            Bathroom remodeling,
+                            Basement finishing,
+                            Office or retail space renovation,
+                            Historical building restoration,
+                            Tenant improvements.
+                        </p>
+                        <a
+                                href="/service_details"
+                                class="readmore stretched-link"
+                        >Learn more <i class="bi bi-arrow-right"></i
+                        ></a>
+                    </div>
+                </div>
+                <!-- End Service Item -->
+
+                <div
+                        class="col-lg-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                >
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="fa-solid fa-trowel-bricks"></i>
+                        </div>
+                        <h3>Interior Design</h3>
+                        <p>
+                            Space planning and layout design,
+                            Interior finish selection (flooring, wall coverings, fixtures),
+                            Custom cabinetry and millwork,
+                            Lighting design,
+                            Color consulting,
+                            Furniture selection and procurement.
+                        </p>
+                        <a
+                                href="/service_details"
+                                class="readmore stretched-link"
+                        >Learn more <i class="bi bi-arrow-right"></i
+                        ></a>
+                    </div>
+                </div>
+                <!-- End Service Item -->
+
+                <div
+                        class="col-lg-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                >
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <h3>Architechture & Consultancy</h3>
+                        <p>
+                            Exterior siding installation (vinyl, wood, fiber cement),
+                            Roofing installation and repair,
+                            Window and door installation,
+                            Deck and patio construction,
+                            Exterior painting and finishing,
+                            Landscaping and hardscaping.
+                        </p>
+                        <a
+                                href="/service_details"
+                                class="readmore stretched-link"
+                        >Learn more <i class="bi bi-arrow-right"></i
+                        ></a>
+                    </div>
+                </div>
+                <!-- End Service Item -->
+
+                <div
+                        class="col-lg-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                >
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i
+                                    class="fa-solid fa-arrow-up-from-ground-water"
+                            ></i>
+                        </div>
+                        <h3>Emergency Response and Disaster Recovery</h3>
+                        <p>
+                            Emergency repair and restoration services for properties damaged by natural disasters, fire,
+                            or other emergencies.
+                        </p>
+                        <a
+                                href="/service_details"
+                                class="readmore stretched-link"
+                        >Learn more <i class="bi bi-arrow-right"></i
+                        ></a>
+                    </div>
+                </div>
+                <!-- End Service Item -->
+            </div>
+        </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+            <ul class="nav nav-tabs row g-2 d-flex">
+                <li class="nav-item col-3">
+                    <a
+                            class="nav-link active show"
+                            data-bs-toggle="tab"
+                            data-bs-target="#tab-1"
+                    >
+                        <h4>Safety</h4>
+                    </a>
+                </li>
+                <!-- End tab nav item -->
+
+                <li class="nav-item col-3">
+                    <a
+                            class="nav-link"
+                            data-bs-toggle="tab"
+                            data-bs-target="#tab-2"
+                    >
+                        <h4>Quality</h4></a
+                    ><!-- End tab nav item -->
+                </li>
+
+                <li class="nav-item col-3">
+                    <a
+                            class="nav-link"
+                            data-bs-toggle="tab"
+                            data-bs-target="#tab-3"
+                    >
+                        <h4>Sustainability</h4>
+                    </a>
+                </li>
+                <!-- End tab nav item -->
+
+                <li class="nav-item col-3">
+                    <a
+                            class="nav-link"
+                            data-bs-toggle="tab"
+                            data-bs-target="#tab-4"
+                    >
+                        <h4>Focus Areas</h4>
+                    </a>
+                </li>
+                <!-- End tab nav item -->
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                    <div class="row">
+                        <div
+                                class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                        >
+                            <h3>LC endeavours to achieve “ZERO reportable injuries” at each site. </h3>
+                            <p class="fst-italic">
+                                At LC, paramount importance is given to safety at every juncture,
+                                every step of the way. The company advocates efforts to achieve
+                                'ZERO reportable injuries' at each work front.
+                            </p>
+                            <p>
+                                The company has undertaken several initiatives over the years to improve safety
+                                performance,
+                                including mandatory induction and training programmes, tool box talks,
+                                demonstration of usages of personal protective equipment etc
+                            </p>
+                            <p>
+                                Besides these initiatives, LC has undertaken the Proactive Safety Observation Programme
+                                (PSOP)
+                                which has brought about a paradigm shift in the way safety is observed at all project
+                                sites.
+                                The PSOP programme analyses the causes of possible accidents, near-misses, unsafe
+                                conditions
+                                & unsafe acts. Each of these causes is systematically reported and pre-emptive actions
+                                are
+                                taken to mitigate the chances of an accident.
+                            </p>
+                        </div>
+                        <div
+                                class="col-lg-6 order-1 order-lg-2 text-center"
+                                data-aos="fade-up"
+                                data-aos-delay="200"
+                        >
+                            <img
+                                    src="{% static 'img/features-1.jpg' %}"
+                                    alt=""
+                                    class="img-fluid"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- End tab content item -->
+
+                <div class="tab-pane" id="tab-2">
+                    <div class="row">
+                        <div
+                                class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                        >
+                            <h3>At LC, we take pride in our work and strive for excellence, leading to results that
+                                speak of quality.</h3>
+
+                            <ul>
+                                <li>
+                                    <i class="bi bi-check2-all"></i>
+                                    Our prime focus is to meet the client's requirements and
+                                    to strive to exceed their expectations
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-all"></i>
+                                    We strive to improve processes and methodologies to achieve consistent and
+                                    predictable results.
+                                    LC aspires for zero-defect by creating an environment of quality awareness, rather
+                                    than relying on inspections
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-all"></i>
+                                    We endeavour to effectively use Total Quality Management and six sigma tools to
+                                    become the clients' most preferred choice by attaining excellence in quality and
+                                    through timely completion of projects
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-all"></i>
+                                    We believe in recognition and empowerment, as well as enhancement of skills,
+                                    to facilitate active and positive engagement of our people in achieving
+                                    organizational objectives
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                                class="col-lg-6 order-1 order-lg-2 text-center"
+                        >
+                            <img
+                                    src="{% static 'img/features-2.jpg' %}"
+                                    alt=""
+                                    class="img-fluid"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- End tab content item -->
+
+                <div class="tab-pane" id="tab-3">
+                    <div class="row">
+                        <div
+                                class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                        >
+                            <h3>LC's commitment to 'Responsible Infrastructure' has stood the test of time,
+                                with social commitment and environmental responsibility being an integral business
+                                goal.</h3>
+                            <ul>
+                                <li>
+                                    <i class="bi bi-check2-all"></i>
+                                    We go beyond business, fulfilling our duty as a responsible corporate citizen.
+                                    We consistently work towards improving the quality of life of the communities we
+                                    serve,
+                                    be it our organisation, the industry as a whole, or society at large.
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-all"></i>
+                                    Since we execute some of the largest and most challenging projects in the country,
+                                    we take it upon ourselves to adopt sustainable practices that serve the well-being
+                                    of the community - both in the immediate vicinity of its work operations and also
+                                    beyond.
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <div
+                                class="col-lg-6 order-1 order-lg-2 text-center"
+                        >
+                            <img
+                                    src="{% static 'img/features-3.jpg' %}"
+                                    alt=""
+                                    class="img-fluid"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- End tab content item -->
+
+                <div class="tab-pane" id="tab-4">
+                    <div class="row">
+                        <div
+                                class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                        >
+
+                            <ul>
+                                <li>
+                                    <i class="bi bi-check2-all"></i>
+                                    Sustainability Reporting
+                                </li>
+                                <p>
+                                    Every year LC submits a report titled' Responsible Infrastructure' that reflects the
+                                    continued progress LC has made towards fulfilling its sustainability goals of
+                                    achieving
+                                    water neutrality,
+                                    minimizing construction waste, zero-reportable injuries for employee health and
+                                    safety
+                                </p>
+                                <li>
+                                    <i class="bi bi-check2-all"></i>
+                                    Water
+                                </li>
+                                <p>
+                                    We at LC understand the importance of Water conservation and hence endeavour for
+                                    effective
+                                    adoption of the 4 R’s (Reduce, Reuse, Recycle and Replenish) at all the projects.
+                                </p>
+                                <li>
+                                    <i class="bi bi-check2-all"></i>
+                                    Disaster Relief
+                                </li>
+                                <p>
+                                    As the founder member of the Disaster Resource Partnership (DRP) formed in the World
+                                    Economic Forum in 2010,
+                                    LC ensures that the core strengths and existing capacities of the Infrastructure and
+                                    Urban Development
+                                    community are mobilized during and after crisis to reduce suffering and save lives.
+                                </p>
+
+                                <li>
+                                    <i class="bi bi-check2-all"></i>
+                                    Environment
+                                </li>
+                                <p>
+                                    Highlight eco-friendly building materials such as recycled materials,
+                                    sustainably sourced wood, and low VOC (volatile organic compound) paints.
+                                </p>
+                            </ul>
+                        </div>
+                        <div
+                                class="col-lg-6 order-1 order-lg-2 text-center"
+                        >
+                            <img
+                                    src="{% static 'img/features-4.jpg' %}"
+                                    alt=""
+                                    class="img-fluid"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- End tab content item -->
+            </div>
+        </div>
+    </section>
+    <!-- End Features Section -->
+
+    <!-- ======= Our Projects Section ======= -->
+    <section id="projects" class="projects section-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Our Projects</h2>
+                <p>
+                    Discover Our Showcase: Transforming Visions into Iconic Structures
+                </p>
+            </div>
+
+            <div
+                    class="portfolio-isotope"
+                    data-portfolio-filter="*"
+                    data-portfolio-layout="masonry"
+                    data-portfolio-sort="original-order"
+            >
+                <ul
+                        class="portfolio-flters"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                >
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-remodeling">Remodeling</li>
+                    <li data-filter=".filter-construction">
+                        Construction
+                    </li>
+                    <li data-filter=".filter-repairs">Repairs</li>
+                    <li data-filter=".filter-design">Design</li>
+                </ul>
+                <!-- End Projects Filters -->
+
+                <div
+                        class="row gy-4 portfolio-container"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                >
+                    <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-remodeling"
+                    >
+                        <div class="portfolio-content h-100">
+                            <img
+                                    src="{% static 'img/projects/remodeling-1.jpg' %}"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="portfolio-info">
+                                <h4>Remodeling 1</h4>
+                                <!--  <p>
+                                     Lorem ipsum, dolor sit amet
+                                     consectetur
+                                 </p> -->
+                                <a
+                                        href="{% static 'img/projects/remodeling-1.jpg' %}"
+                                        title="Remodeling 1"
+                                        data-gallery="portfolio-gallery-remodeling"
+                                        class="glightbox preview-link"
+                                ><i class="bi bi-zoom-in"></i
+                                ></a>
+                                <a
+                                        href="/project_details"
+                                        title="More Details"
+                                        class="details-link"
+                                ><i class="bi bi-link-45deg"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Projects Item -->
+
+                    <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-construction"
+                    >
+                        <div class="portfolio-content h-100">
+                            <img
+                                    src="{% static 'img/projects/construction-1.jpg' %}"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="portfolio-info">
+                                <h4>Construction 1</h4>
+                                <!--  <p>
+                                     Lorem ipsum, dolor sit amet
+                                     consectetur
+                                 </p> -->
+                                <a
+                                        href="{% static 'img/projects/construction-1.jpg' %}"
+                                        title="Construction 1"
+                                        data-gallery="portfolio-gallery-construction"
+                                        class="glightbox preview-link"
+                                ><i class="bi bi-zoom-in"></i
+                                ></a>
+                                <a
+                                        href="/project_details"
+                                        title="More Details"
+                                        class="details-link"
+                                ><i class="bi bi-link-45deg"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Projects Item -->
+
+                    <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-repairs"
+                    >
+                        <div class="portfolio-content h-100">
+                            <img
+                                    src="{% static 'img/projects/repairs-1.jpg' %}"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="portfolio-info">
+                                <h4>Repairs 1</h4>
+                                <!--  <p>
+                                     Lorem ipsum, dolor sit amet
+                                     consectetur
+                                 </p> -->
+                                <a
+                                        href="{% static 'img/projects/repairs-1.jpg' %}"
+                                        title="Repairs 1"
+                                        data-gallery="portfolio-gallery-repairs"
+                                        class="glightbox preview-link"
+                                ><i class="bi bi-zoom-in"></i
+                                ></a>
+                                <a
+                                        href="/project_details"
+                                        title="More Details"
+                                        class="details-link"
+                                ><i class="bi bi-link-45deg"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Projects Item -->
+
+                    <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-design"
+                    >
+                        <div class="portfolio-content h-100">
+                            <img
+                                    src="{% static 'img/projects/design-1.jpg' %}"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="portfolio-info">
+                                <h4>Design 1</h4>
+                                <!--  <p>
+                                     Lorem ipsum, dolor sit amet
+                                     consectetur
+                                 </p> -->
+                                <a
+                                        href="{% static 'img/projects/design-1.jpg' %}"
+                                        title="Repairs 1"
+                                        data-gallery="portfolio-gallery-book"
+                                        class="glightbox preview-link"
+                                ><i class="bi bi-zoom-in"></i
+                                ></a>
+                                <a
+                                        href="/project_details"
+                                        title="More Details"
+                                        class="details-link"
+                                ><i class="bi bi-link-45deg"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Projects Item -->
+
+                    <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-remodeling"
+                    >
+                        <div class="portfolio-content h-100">
+                            <img
+                                    src="{% static 'img/projects/remodeling-2.jpg' %}"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="portfolio-info">
+                                <h4>Remodeling 2</h4>
+                                <!--  <p>
+                                     Lorem ipsum, dolor sit amet
+                                     consectetur
+                                 </p> -->
+                                <a
+                                        href="{% static 'img/projects/remodeling-2.jpg' %}"
+                                        title="Remodeling 2"
+                                        data-gallery="portfolio-gallery-remodeling"
+                                        class="glightbox preview-link"
+                                ><i class="bi bi-zoom-in"></i
+                                ></a>
+                                <a
+                                        href="/project_details"
+                                        title="More Details"
+                                        class="details-link"
+                                ><i class="bi bi-link-45deg"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Projects Item -->
+
+                    <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-construction"
+                    >
+                        <div class="portfolio-content h-100">
+                            <img
+                                    src="{% static 'img/projects/construction-2.jpg' %}"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="portfolio-info">
+                                <h4>Construction 2</h4>
+                                <!--  <p>
+                                     Lorem ipsum, dolor sit amet
+                                     consectetur
+                                 </p> -->
+                                <a
+                                        href="{% static 'img/projects/construction-2.jpg' %}"
+                                        title="Construction 2"
+                                        data-gallery="portfolio-gallery-construction"
+                                        class="glightbox preview-link"
+                                ><i class="bi bi-zoom-in"></i
+                                ></a>
+                                <a
+                                        href="/project_details"
+                                        title="More Details"
+                                        class="details-link"
+                                ><i class="bi bi-link-45deg"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Projects Item -->
+
+                    <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-repairs"
+                    >
+                        <div class="portfolio-content h-100">
+                            <img
+                                    src="{% static 'img/projects/repairs-2.jpg' %}"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="portfolio-info">
+                                <h4>Repairs 2</h4>
+                                <!--  <p>
+                                     Lorem ipsum, dolor sit amet
+                                     consectetur
+                                 </p> -->
+                                <a
+                                        href="{% static 'img/projects/repairs-2.jpg' %}"
+                                        title="Repairs 2"
+                                        data-gallery="portfolio-gallery-repairs"
+                                        class="glightbox preview-link"
+                                ><i class="bi bi-zoom-in"></i
+                                ></a>
+                                <a
+                                        href="/project_details"
+                                        title="More Details"
+                                        class="details-link"
+                                ><i class="bi bi-link-45deg"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Projects Item -->
+
+                    <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-design"
+                    >
+                        <div class="portfolio-content h-100">
+                            <img
+                                    src="{% static 'img/projects/design-2.jpg' %}"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="portfolio-info">
+                                <h4>Design 2</h4>
+                                <!--  <p>
+                                     Lorem ipsum, dolor sit amet
+                                     consectetur
+                                 </p> -->
+                                <a
+                                        href="{% static 'img/projects/design-2.jpg' %}"
+                                        title="Repairs 2"
+                                        data-gallery="portfolio-gallery-book"
+                                        class="glightbox preview-link"
+                                ><i class="bi bi-zoom-in"></i
+                                ></a>
+                                <a
+                                        href="/project_details"
+                                        title="More Details"
+                                        class="details-link"
+                                ><i class="bi bi-link-45deg"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Projects Item -->
+
+                    <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-remodeling"
+                    >
+                        <div class="portfolio-content h-100">
+                            <img
+                                    src="{% static 'img/projects/remodeling-3.jpg' %}"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="portfolio-info">
+                                <h4>Remodeling 3</h4>
+                                <!--  <p>
+                                     Lorem ipsum, dolor sit amet
+                                     consectetur
+                                 </p> -->
+                                <a
+                                        href="{% static 'img/projects/remodeling-3.jpg' %}"
+                                        title="Remodeling 3"
+                                        data-gallery="portfolio-gallery-remodeling"
+                                        class="glightbox preview-link"
+                                ><i class="bi bi-zoom-in"></i
+                                ></a>
+                                <a
+                                        href="/project_details"
+                                        title="More Details"
+                                        class="details-link"
+                                ><i class="bi bi-link-45deg"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Projects Item -->
+
+                    <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-construction"
+                    >
+                        <div class="portfolio-content h-100">
+                            <img
+                                    src="{% static 'img/projects/construction-3.jpg' %}"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="portfolio-info">
+                                <h4>Construction 3</h4>
+                                <!--  <p>
+                                     Lorem ipsum, dolor sit amet
+                                     consectetur
+                                 </p> -->
+                                <a
+                                        href="{% static 'img/projects/construction-3.jpg' %}"
+                                        title="Construction 3"
+                                        data-gallery="portfolio-gallery-construction"
+                                        class="glightbox preview-link"
+                                ><i class="bi bi-zoom-in"></i
+                                ></a>
+                                <a
+                                        href="/project_details"
+                                        title="More Details"
+                                        class="details-link"
+                                ><i class="bi bi-link-45deg"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Projects Item -->
+
+                    <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-repairs"
+                    >
+                        <div class="portfolio-content h-100">
+                            <img
+                                    src="{% static 'img/projects/repairs-3.jpg' %}"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="portfolio-info">
+                                <h4>Repairs 3</h4>
+                                <!--  <p>
+                                     Lorem ipsum, dolor sit amet
+                                     consectetur
+                                 </p> -->
+                                <a
+                                        href="{% static 'img/projects/repairs-3.jpg' %}"
+                                        title="Repairs 2"
+                                        data-gallery="portfolio-gallery-repairs"
+                                        class="glightbox preview-link"
+                                ><i class="bi bi-zoom-in"></i
+                                ></a>
+                                <a
+                                        href="/project_details"
+                                        title="More Details"
+                                        class="details-link"
+                                ><i class="bi bi-link-45deg"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Projects Item -->
+
+                    <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-design"
+                    >
+                        <div class="portfolio-content h-100">
+                            <img
+                                    src="{% static 'img/projects/design-3.jpg' %}"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="portfolio-info">
+                                <h4>Design 3</h4>
+                                <!--  <p>
+                                     Lorem ipsum, dolor sit amet
+                                     consectetur
+                                 </p> -->
+                                <a
+                                        href="{% static 'img/projects/design-3.jpg' %}"
+                                        title="Repairs 3"
+                                        data-gallery="portfolio-gallery-book"
+                                        class="glightbox preview-link"
+                                ><i class="bi bi-zoom-in"></i
+                                ></a>
+                                <a
+                                        href="/project_details"
+                                        title="More Details"
+                                        class="details-link"
+                                ><i class="bi bi-link-45deg"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Projects Item -->
+                </div>
+                <!-- End Projects Container -->
+            </div>
+        </div>
+    </section>
+    <!-- End Our Projects Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Testimonials</h2>
+                <p>
+                    Experience Our Exceptional Service Through the Eyes of Our Clients
+                </p>
+            </div>
+
+            <div class="slides-2 swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img
+                                        src="{% static 'img/testimonials/testimonials-1.jpg' %}"
+                                        class="testimonial-img"
+                                        alt=""
+                                />
+                                <h3>Saul Goodman</h3>
+                                <h4>Ceo &amp; Founder</h4>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i
+                                    ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i
+                                            class="bi bi-quote quote-icon-left"
+                                    ></i>
+                                    We contracted LordConstruction to build our new office space, and they did an
+                                    outstanding job. Not only did they complete the project on time and within budget,
+                                    but they also provided innovative solutions to maximize the use of space and enhance
+                                    productivity. I highly recommend them for any commercial construction needs.
+                                    <i
+                                            class="bi bi-quote quote-icon-right"
+                                    ></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img
+                                        src="{% static 'img/testimonials/testimonials-2.jpg' %}"
+                                        class="testimonial-img"
+                                        alt=""
+                                />
+                                <h3>Sara Wilsson</h3>
+                                <h4>Designer</h4>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i
+                                    ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i
+                                            class="bi bi-quote quote-icon-left"
+                                    ></i>
+                                    Export tempor illum tamen malis
+                                    malis eram quae irure esse labore
+                                    quem cillum quid cillum eram malis
+                                    quorum velit fore eram velit sunt
+                                    aliqua noster fugiat irure amet
+                                    legam anim culpa.
+                                    <i
+                                            class="bi bi-quote quote-icon-right"
+                                    ></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img
+                                        src="{% static 'img/testimonials/testimonials-3.jpg' %}"
+                                        class="testimonial-img"
+                                        alt=""
+                                />
+                                <h3>Jena Karlis</h3>
+                                <h4>Store Owner</h4>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i
+                                    ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i
+                                            class="bi bi-quote quote-icon-left"
+                                    ></i>
+                                    Enim nisi quem export duis labore
+                                    cillum quae magna enim sint quorum
+                                    nulla quem veniam duis minim tempor
+                                    labore quem eram duis noster aute
+                                    amet eram fore quis sint minim.
+                                    <i
+                                            class="bi bi-quote quote-icon-right"
+                                    ></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img
+                                        src="{% static 'img/testimonials/testimonials-4.jpg' %}' %}"
+                                        class="testimonial-img"
+                                        alt=""
+                                />
+                                <h3>Matt Brandon</h3>
+                                <h4>Freelancer</h4>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i
+                                    ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i
+                                            class="bi bi-quote quote-icon-left"
+                                    ></i>
+                                    Fugiat enim eram quae cillum dolore
+                                    dolor amet nulla culpa multos export
+                                    minim fugiat minim velit minim dolor
+                                    enim duis veniam ipsum anim magna
+                                    sunt elit fore quem dolore labore
+                                    illum veniam.
+                                    <i
+                                            class="bi bi-quote quote-icon-right"
+                                    ></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img
+                                        src="{% static 'img/testimonials/testimonials-5.jpg' %}' %}"
+                                        class="testimonial-img"
+                                        alt=""
+                                />
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i
+                                    ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i
+                                ><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i
+                                            class="bi bi-quote quote-icon-left"
+                                    ></i>
+                                    Quis quorum aliqua sint quem legam
+                                    fore sunt eram irure aliqua veniam
+                                    tempor noster veniam enim culpa
+                                    labore duis sunt culpa nulla illum
+                                    cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                    <i
+                                            class="bi bi-quote quote-icon-right"
+                                    ></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Contact-us Section ======= -->
+    <section id="contact" class="contact section-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>
+                    Please feel free to reach out to us using the contact information below, and our team will be happy
+                    to assist you.
+                </p>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div
+                            class="info-item d-flex flex-column justify-content-center align-items-center"
+                    >
+                        <i class="bi bi-map"></i>
+                        <h3>Our Address</h3>
+                        <p align="center"> 2nd Floor,113 Manbhawan Nagar
+                            Near PNB, service Road,<br/>
+                            Bengali Square Indore
+                            452016, INDIA</p>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div
+                            class="info-item d-flex flex-column justify-content-center align-items-center"
+                    >
+                        <i class="bi bi-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>contact@lordconstruction.com</p>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div
+                            class="info-item d-flex flex-column justify-content-center align-items-center"
+                    >
+                        <i class="bi bi-telephone"></i>
+                        <h3>Call Us</h3>
+                        <p>+91 9926272628</p>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+            </div>
+
+            <div class="row gy-4 mt-1">
+                <div class="col-lg-6">
+                    <!--                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.03507728197167!2d75.91312522552896!3d22.70737191281708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e305fb629d9b%3A0xdab4b7ce9214be22!2sLord%20construction!5e0!3m2!1sen!2sin!4v1711392835064!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14721.459389990023!2d75.89909514487469!3d22.714676663786385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e2cc02046719%3A0x3cd8daafe0aa7684!2sLord%20Construction%20(Best%20Architect%2FBest%20Engineer%2FBest%20construction%20Company%20in%20indore%2FNaksha%20Permission%2F%20Renovation%2Fdesign%2FPeb)!5e0!3m2!1sen!2sin!4v1711394314874!5m2!1sen!2sin"
+                            frameborder="0"
+                            style="border: 0; width: 100%; height: 384px"
+                            allowfullscreen></iframe>
+                    <!--                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.03507728197167!2d75.91312522552896!3d22.70737191281708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e305fb629d9b%3A0xdab4b7ce9214be22!2sLord%20construction!5e0!3m2!1sen!2sin!4v1711392835064!5m2!1sen!2sin" frameborder="0"-->
+                    <!--                                    style="border: 0; width: 100%; height: 384px"-->
+                    <!--                                    allowfullscreen></iframe>-->
+                    <!--                            <iframe-->
+                    <!--                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"-->
+                    <!--                                frameborder="0"-->
+                    <!--                                style="border: 0; width: 100%; height: 384px"-->
+                    <!--                                allowfullscreen-->
+                    <!--                            ></iframe>-->
+                </div>
+                <!-- End Google Maps -->
+
+                <div class="col-lg-6">
+                    <form
+                            action="{% url 'queryDetail' %}"
+                            method="post"
+                            role="form"
+                            class="php-email-form"
+
+                    >
+                        {% csrf_token %}
+                        <div class="row gy-4">
+                            <div class="col-lg-6 form-group">
+                                <input
+                                        type="text"
+                                        name="name"
+                                        class="form-control"
+                                        id="name"
+                                        placeholder="Your Name"
+                                        required
+                                />
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <input
+                                        type="email"
+                                        class="form-control"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Your Email"
+                                        required
+                                />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input
+                                    type="text"
+                                    class="form-control"
+                                    name="subject"
+                                    id="subject"
+                                    placeholder="Subject"
+                                    required
+                            />
+                        </div>
+                        <div class="form-group">
+                                    <textarea
+                                            class="form-control"
+                                            name="message"
+                                            rows="5"
+                                            placeholder="Message"
+                                            required
+                                    ></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">
+                                Your message has been sent. Thank you!
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- End Contact Form -->
+            </div>
+        </div>
+    </section>
+    <!-- End Contact-us Section -->
+</main>
+<!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+    <div class="footer-content position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-info">
+                        <h3>LordConstruction</h3>
+                        <p>
+                            2nd Floor,113 Manbhawan Nagar <br/>
+                            Near PNB, service Road, <br/>
+                            Bengali Square Indore <br/>
+                            452016, INDIA<br/><br/>
+                            <strong>Phone:</strong> +91 9926272628<br/>
+                            <strong>Email:</strong>
+                            info@lordconstruction.com<br/>
+                        </p>
+                        <div class="social-links d-flex mt-3">
+                            <a
+                                    href="#"
+                                    class="d-flex align-items-center justify-content-center"
+                            ><i class="bi bi-twitter"></i
+                            ></a>
+                            <a
+                                    href="#"
+                                    class="d-flex align-items-center justify-content-center"
+                            ><i class="bi bi-facebook"></i
+                            ></a>
+                            <a
+                                    href="#"
+                                    class="d-flex align-items-center justify-content-center"
+                            ><i class="bi bi-instagram"></i
+                            ></a>
+                            <a
+                                    href="#"
+                                    class="d-flex align-items-center justify-content-center"
+                            ><i class="bi bi-linkedin"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End footer info column-->
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="/about">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <!-- End footer links column-->
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Residential Construction</a></li>
+                        <li><a href="#">Commercial Construction</a></li>
+                        <li><a href="#">Renovation and Remodeling</a></li>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Emergency Response and Disaster Recovery</a></li>
+                    </ul>
+                </div>
+                <!-- End footer links column-->
+
+                <!--                        <div class="col-lg-2 col-md-3 footer-links">-->
+                <!--                            <h4>Hic solutasetp</h4>-->
+                <!--                            <ul>-->
+                <!--                                <li>-->
+                <!--                                    <a href="#">Molestiae accusamus iure</a>-->
+                <!--                                </li>-->
+                <!--                                <li><a href="#">Excepturi dignissimos</a></li>-->
+                <!--                                <li><a href="#">Suscipit distinctio</a></li>-->
+                <!--                                <li><a href="#">Dilecta</a></li>-->
+                <!--                                <li><a href="#">Sit quas consectetur</a></li>-->
+                <!--                            </ul>-->
+                <!--                        </div>-->
+                <!-- End footer links column-->
+
+                <!--                        <div class="col-lg-2 col-md-3 footer-links">-->
+                <!--                            <h4>Nobis illum</h4>-->
+                <!--                            <ul>-->
+                <!--                                <li><a href="#">Ipsam</a></li>-->
+                <!--                                <li><a href="#">Laudantium dolorum</a></li>-->
+                <!--                                <li><a href="#">Dinera</a></li>-->
+                <!--                                <li><a href="#">Trodelas</a></li>-->
+                <!--                                <li><a href="#">Flexo</a></li>-->
+                <!--                            </ul>-->
+                <!--                        </div>-->
+                <!-- End footer links column-->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright
+                <strong><span>LordConstruction</span></strong
+                >. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/LordConstruction-bootstrap-construction-website-template/ -->
+                Designed by
+                <a href="https://bootstrapmade.com/">LordConstruction</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+<a
+        href="#"
+        class="scroll-top d-flex align-items-center justify-content-center"
+><i class="bi bi-arrow-up-short"></i
+></a>
+
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vendor/aos/aos.js' %}"></script>
+<script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+<!--        <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>-->
+
+<!-- Template Main JS File -->
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
