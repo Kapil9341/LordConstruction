@@ -3,5 +3,12 @@
         "src": "elevate/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLamdaSize": "15mb", "runtime": "Python 3.11.3"}
-    }]
+    }],
+    "router": [
+        {
+            "src": "/(.*)",
+            "dest": "elevate/wsgi.py"
+              
+        }
+    ]
 }
