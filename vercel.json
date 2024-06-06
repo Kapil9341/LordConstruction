@@ -1,12 +1,20 @@
 {
-    "build":[{
+    "version": 2,
+    "builds": [
+      {
         "src": "elevate/wsgi.py",
         "use": "@vercel/python",
-        "config": { "maxLamdaSize": "15mb", "runtime": "Python 3.11.3"}
-    }],
-    
+        "config": {
+          "maxLambdaSize": "15mb",
+          "runtime": "python3.11"
+        }
+      }
+    ],
     "routes": [
-        { "src": "/(.*)", "dest": "elevate/wsgi.py" }
-      ]
-   
-}
+      {
+        "src": "/(.*)",
+        "dest": "elevate/wsgi.py"
+      }
+    ]
+  }
+  
