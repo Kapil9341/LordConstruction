@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-byyja*w$jqdpa+^5pn2lak7(n7$z7)c(%2beu%x+xe&fe+lvm*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.versel.app']
+ALLOWED_HOSTS = ['*', 'www.lordconstructions.com']
  
 # Application definition
 
@@ -79,6 +79,16 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'HOST': 'localhost',
+#         'USER': 'lord',
+#         'PASSWORD': 'lord@123',
+#         'NAME': 'lorddb',
+# }
+# }
 
 
 # Password validation
