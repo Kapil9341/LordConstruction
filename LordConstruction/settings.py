@@ -54,7 +54,7 @@ ROOT_URLCONF = 'LordConstruction.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+         'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -79,6 +79,16 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'HOST': 'localhost',
+#         'USER': 'lord',
+#         'PASSWORD': 'lord@123',
+#         'NAME': 'lorddb',
+# }
+# }
 
 
 # Password validation
